@@ -1,0 +1,35 @@
+#include <iostream>
+#include <iomanip>
+
+//hola profe//
+
+int main () {
+
+double tempCelcius;
+double tempFarenheit;
+double tempKelvin;
+double tempRankine;
+
+std::cout<<"\n Ingrese la temperatura en CELCIUS:\n";
+std::cin>>tempCelcius;
+
+
+//conversion celcius a demas temperaturas//
+
+
+tempFarenheit = (tempCelcius * 1.8) + 32;
+tempKelvin = tempCelcius + 273.15;
+tempRankine = (tempCelcius + 273.15)* 1.8;
+
+//resultado con decimales (2)//
+
+std::cout << std::fixed << std::setprecision(2);
+std::cout<<"\n Para tu temperatura de "<<tempCelcius<<" C las conversiones son las siguientes: \n";
+std::cout<<"\n Temperatura en Farenheit: "<<tempFarenheit<<" F \n";
+std::cout<<"\n Temperatura en Kelvin: "<<tempKelvin<<" K \n";
+std::cout<<"\n Temperatura en Rankine: "<<tempRankine<<" R \n";
+
+//no puse el simbolo grados porque lo imprime mal//
+
+    return 0;
+}
